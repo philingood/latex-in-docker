@@ -4,9 +4,7 @@ on:
   push:
     paths:
       - 'Dockerfile'
-
-env:
-  DOCKER_IMAGE_NAME: ${{ github.repository }}:${{ github.ref_name }}
+      - '.github/workflows/'
 
 jobs:
   docker-build:
